@@ -30,7 +30,7 @@ class BankAccount{
 	}
 	void withdraw(int amount)
 	{
-		if(amount>=balance)
+		if(amount<=balance)
 		{
 			balance-=amount;
 			prevTransaction=-(amount);
